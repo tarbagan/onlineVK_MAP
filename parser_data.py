@@ -47,7 +47,7 @@ def get_count():
 def save_cvs():
 """Save to CSV"""
     datagroup = get_count()
-    with open( "d:/AnacodaProgect/Активность пользоателей карта/parser_result.cvs", "w", encoding='utf-8' ) as file:
+    with open( "/parser_result.cvs", "w", encoding='utf-8' ) as file:
         fieldnames = ['id', 'title', 'region', 'count', 'lat', 'lot']
         writer = csv.DictWriter( file, fieldnames=fieldnames )
         writer.writeheader()
